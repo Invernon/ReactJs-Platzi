@@ -4,29 +4,9 @@ import './media.css';
 
 class Media extends Component{
 
-    // constructor(props){
-    //     super (props)
-    //     this.state = {
-    //         author: props.author,
-    //     }
-    // }
-
-    // state = {
-    //     author: this.props.author,
-    //     title: this.props.title,
-    //     cover: this.props.cover,
-    // }
-
-    handleClick = (event) => {
-        // Con esto se puede  
-        this.setState({
-            author: "Ricardo Millos"
-        })
-    }
-
     render(){
         return(
-            <div className="Media" onClick={this.handleClick}>
+            <div className="Media" onClick={this.props.handleClick}>
                 <div className="Media-cover">
                     <img className="Media-image"
                     src={this.props.cover}
