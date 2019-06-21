@@ -1,0 +1,7 @@
+.Fullscreen{
+    align-content: center;
+    display: flex;
+    padding: 0 10px;
+    cursor: pointer;
+    align-items:center;
+}
